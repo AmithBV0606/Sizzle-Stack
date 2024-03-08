@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Icon :  -->
+    <link rel="icon" href="img/SS.jpg" />
+
+    <!-- Font Awesome :  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Remix Icon : -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Title :  -->
+    <title>Sizzle Stack</title>
+
+    <!-- Swiper Js CDN:  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header Navigation Bar :  -->
+    <header class="bg-MidnightGreen fixed top-0 left-0 w-full z-50 dark:bg-black">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <!-- Logo :  -->
+        <div>
+          <a href="#" class="text-3xl uppercase font-poppins font-medium"
+            >Sizzle<span class="text-Saffron">Stack</span></a
+          >
+        </div>
+
+        <!-- Other Pages :  -->
+        <div class="hidden absolute top-0 left-0 w-full py-14 bg-MidnightGreen border-b-2 border-Saffron md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto dark:bg-black" id="nav-menu">
+          <ul class="flex flex-col text-center gap-5 md:flex-row md:gap-8">
+            <li>
+              <a
+                href="#home"
+                class="nav_link text-Saffron hover:text-Saffron ease-in duration-500"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="nav_link hover:text-Saffron ease-in duration-500"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#menu"
+                class="nav_link hover:text-Saffron ease-in duration-500"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#review"
+                class="nav_link hover:text-Saffron ease-in duration-500"
+                >Review</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="nav_link hover:text-Saffron ease-in duration-500"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Close Icon :  -->
+          <div
+            class="md:hidden absolute top-[0.7rem] right-4 text-2xl cursor-pointer"
+            id="nav-close"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <!-- Moon Icon and Hamberger :  -->
+        <div class="flex items-center gap-5">
+          <!-- Moon Icon :  -->
+          <i class="ri-moon-line cursor-pointer ml-10 text-3xl" id="theme-toggle"></i>
+
+          <!-- Hamburger Icon :  -->
+          <div id="hamburger" class="md:hidden">
+            <i class="ri-menu-2-line cursor-pointer text-3xl"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="w-full h-[1px] bg-Saffron my-1"></div>
+    </header>
+
+    <!-- Body of the Website :  -->
+    <main>
+      <section id="home">
+        <div class="flex flex-col items-center gap-10 md:flex-row mx-8">
+          <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY md:p-0">
+            <img src="img/home-image.png" alt="home image" class="home_image w-80 md:w-[80%] md:mx-auto"/>
+          </div>
+
+          <div class="home_content text-center md:basis-1/2 md:text-start lg:basis-3/5 md:space-y-6">
+            <h1 class="home_title">Dive Into the Juicy World of SizzleStack</h1>
+
+            <div class="seperator mx-auto md:mx-0"></div>
+
+            <p class="paragraph">
+              Elevating Burger Bliss to New Heights! Indulge in the Juiciest
+              Creations, Infused with Flavors that Ignite the Senses. From
+              Classic Favorites to Inventive Masterpieces, Every Bite is a
+              Journey Through Culinary Delight. Join Us at Sizzle Stack and
+              Discover the True Artistry of Burger Craftsmanship. Where Culinary
+              Artistry Meets Burger Innovation. Dive into a World of Juicy
+              Creations Infused with Flavors that Ignite the Senses. From
+              Classic Favorites to Bold Inventive Masterpieces, Every Bite is a
+              Journey Through Gourmet Delight. Join Us at Sizzle Stack and
+              Experience the Ultimate Burger Indulgence.
+            </p>
+
+            <div
+              class="text-base flex justify-center items-center gap-5 py-10 md:justify-start md:gap-20"
+            >
+              <div class="text-center">
+                <i class="fa-solid fa-utensils text-Saffron text-4xl"></i>
+                <br />
+                Delicious
+              </div>
+
+              <div class="text-center">
+                <i class="fa-solid fa-droplet text-Saffron text-4xl"></i>
+                <br />
+                Fresh
+              </div>
+
+              <div class="text-center">
+                <i class="fa-brands fa-envira text-Saffron text-4xl"></i>
+                <br />
+                Organic
+              </div>
+            </div>
+
+            <a
+              href="#"
+              class="BTN BTN-primary hover:bg-DelftBlue hover:text-white"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="category">
+        <div class="flex flex-col gap-5 md:flex-row ml-16 mr-16">
+          <!-- Card 1 : -->
+          <div
+            class="category_card bg-Saffron flex py-4 rounded-xl overflow-hidden md:flex-1"
+          >
+            <!-- Image :  -->
+            <div class="basis-1/3 relative">
+              <img
+                src="img/burger-1.png"
+                alt="category image"
+                class="absolute w-28 -bottom-4 -left-4"
+              />
+            </div>
+
+            <!-- Text :  -->
+            <div>
+              <div class="mb-2">
+                <h4 class="card_title">FOOD</h4>
+                <p class="text-xs">Unleash Your Burger Cravings</p>
+              </div>
+
+              <a href="#" class="text-black cursor-pointer hover:underline"
+                >Buy Online</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 : -->
+          <div
+            class="category_card bg-red-500 flex py-4 rounded-xl overflow-hidden md:flex-1"
+          >
+            <!-- Image :  -->
+            <div class="basis-1/3 relative">
+              <img
+                src="img/snack-1.png"
+                alt="category image"
+                class="absolute w-28 -bottom-4 -left-4"
+              />
+            </div>
+
+            <!-- Text :  -->
+            <div>
+              <div class="mb-2">
+                <h4 class="card_title">SNACK</h4>
+                <p class="text-xs">Elevating Your Snacking Experience</p>
+              </div>
+
+              <a href="#" class="text-black cursor-pointer hover:underline"
+                >Buy Online</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 : -->
+          <div
+            class="category_card bg-green-700 flex py-4 rounded-xl overflow-hidden md:flex-1"
+          >
+            <!-- Image :  -->
+            <div class="basis-1/3 relative">
+              <img
+                src="img/beverage-2.png"
+                alt="category image"
+                class="absolute w-28 -bottom-4 -left-4"
+              />
+            </div>
+
+            <!-- Text :  -->
+            <div>
+              <div class="mb-2">
+                <h4 class="card_title">BEVERAGES</h4>
+                <p class="text-xs">Sip, Refresh, and Enjoy</p>
+              </div>
+
+              <a href="#" class="text-black cursor-pointer hover:underline"
+                >Buy Online</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="promo">
+        <div class="ml-16 mr-16 flex flex-col gap-5 lg:gap-16 lg:flex-row">
+          <!-- Card 1 :  -->
+          <div
+            class="promo_card-1 bg-DelftBlue flex flex-col p-5 rounded-lg md:flex-row md:items-center md:gap-10 lg:gap-5 dark:bg-gray-800"
+          >
+            <img
+              src="img/promo-1.png"
+              alt="promo image"
+              class="w-40 mx-auto hover:animate-movingY"
+            />
+
+            <div class="space-y-3 pt-5 md:pt-3">
+              <p class="text-sm text-Saffron">Payday Promo</p>
+
+              <h3 class="card_title">Get 8% Discount on Payday</h3>
+
+              <p class="paragraph">
+                Dive into a World of Juicy Creations Infused with Flavors that
+                Ignite the Senses. Join Us at Sizzle Stack and Experience the
+                Ultimate Burgers.
+              </p>
+
+              <a href="#" class="text-lg text-Saffron hover:underline"
+                >Buy Online</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 :  -->
+          <div
+            class="promo_card-2 bg-DelftBlue flex flex-col p-5 rounded-lg md:flex-row md:items-center md:gap-10 lg:gap-5 dark:bg-gray-800"
+          >
+            <img
+              src="img/promo-2.png"
+              alt="promo image"
+              class="w-40 mx-auto hover:animate-movingY"
+            />
+
+            <div class="space-y-3 pt-5 md:pt-3">
+              <p class="text-sm text-Saffron">Super Sunday</p>
+
+              <h3 class="card_title">Get 5% Discount on every Sunday!</h3>
+
+              <p class="paragraph">
+                From Classic Favorites to Inventive Masterpieces, Every Bite is
+                a Journey Through Culinary Delight. Join Us at Sizzle Stack and
+                Discover the True Artistry of Burger Craftsmanship.
+              </p>
+
+              <a href="#" class="text-lg text-Saffron hover:underline"
+                >Buy Online</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="flex flex-col gap-10 md:flex-row mr-16 ml-16">
+          <div class="flex-1 about_image">
+            <img src="img/about.jpg" alt="about image" class="rounded-lg md:h-full md:w-full"/>
+          </div>
+
+          <div class="flex-1 space-y-5 lg:space-y-8 about_content">
+            <h2 class="section_title">
+              The Best Burger, Beverages and Snacks, All-In-One Place.
+            </h2>
+
+            <div class="seperator"></div>
+
+            <p class="paragraph">
+              At Sizzle Stack, we're passionate about crafting the perfect
+              burger experience. Each patty is hand-formed using the finest
+              quality ingredients, ensuring every bite bursts with flavor. From
+              classic cheeseburgers to innovative creations, our menu offers
+              something for everyone.
+            </p>
+
+            <ul class="grid grid-cols-2 py-5 space-y-1 gap-5">
+              <li class="text-xs text-gray-200">
+                <i class="fa-solid fa-check text-Saffron"></i>
+                Best Price
+              </li>
+
+              <li class="text-xs text-gray-200">
+                <i class="fa-solid fa-check text-Saffron"></i>
+                Fresh Item
+              </li>
+
+              <li class="text-xs text-gray-200">
+                <i class="fa-solid fa-check text-Saffron"></i>
+                Best Service
+              </li>
+
+              <li class="text-xs text-gray-200">
+                <i class="fa-solid fa-check text-Saffron"></i>
+                Health Protocol
+              </li>
+            </ul>
+
+            <a
+              href=""
+              class="BTN BTN-primary hover:bg-DelftBlue hover:text-white"
+              >About Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <div class="ml-16 mr-16">
+          <!-- Menu header :  -->
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section_title">OUR MENU</h2>
+
+            <div class="seperator mx-auto"></div>
+
+            <p class="paragraph">
+              Explore our menu at Sizzle Stack for an array of mouthwatering
+              burgers, crafted with premium ingredients and bursting with flavor
+              sensations to satisfy every craving.
+            </p>
+
+            <div class="tabs_wrap">
+              <ul class="flex flex-wrap justify-center gap-3 py-10">
+                <li data-tabs="all" class="BTN BTN-primary dark:bg-yellow-500 dark:text-black active">All</li>
+                <li data-tabs="food" class="BTN BTN-primary dark:bg-yellow-500 dark:text-black">Food</li>
+                <li data-tabs="snack" class="BTN BTN-primary dark:bg-yellow-500 dark:text-black">Snacks</li>
+                <li data-tabs="beverage" class="BTN BTN-primary dark:bg-yellow-500 dark:text-black">Beverages</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Menu List :  -->
+          <div class="menu_items">
+            <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+              <!-- Food Items : -->
+              <!-- Food : 1 -->
+              <li class="item_wrap food">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/burger-1.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Regular Chicken Burger
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Regular Chicken Burger.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Food : 2 -->
+              <li class="item_wrap food">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/burger-2.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Stuffed Cheese Burger
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Medium sized stuffed Cheese Burger.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Food : 3 -->
+              <li class="item_wrap food">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/burger-3.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Aloo Tikki Burger
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Aloo Tikki Burger.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Food : 4 -->
+              <li class="item_wrap food">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/burger-4.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      MC Aloo Tikki Burger
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Regular MC Aloo Tikki Burger.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Food : 5 -->
+              <li class="item_wrap food">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/burger-5.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Regular Tikki Burger
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Regular Tikki Burger.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Snack Items :  -->
+              <!-- Snack : 1 -->
+              <li class="item_wrap snack">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/snack-1.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      French Fries
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Small, Medium and Large sized
+                      French Fries.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Snack : 2 -->
+              <li class="item_wrap snack">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/snack-2.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Peri-Peri French Fries
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Small, Medium and Large sized
+                      Peri-Peri French Fries.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Snack : 3 -->
+              <li class="item_wrap snack">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/snack-3.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">Sandwhich</h4>
+                    <p class="paragraph">
+                      Savor the taste of our Small, Medium and Large sized
+                      Sandwhich.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Snack : 4 -->
+              <li class="item_wrap snack">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/snack-4.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Crispy Potato Chips
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Small, Medium and Large sized
+                      Crispy Potato Chips.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Snack : 5 -->
+              <li class="item_wrap snack">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/snack-5.png"
+                    alt="food image"
+                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-32"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Crispy Fries
+                    </h4>
+                    <p class="paragraph">
+                      Savor the taste of our Small, Medium and Large sized
+                      Crispy Fries.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Beverages :  -->
+              <!-- Drink : 1 -->
+              <li class="item_wrap beverage">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/beverage-1.png"
+                    alt="food image"
+                    class="w-28 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Banana Shake
+                    </h4>
+                    <p class="paragraph">
+                      Quench your thirst with our refreshing Banana Milkshake.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Drink : 2 -->
+              <li class="item_wrap beverage">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/beverage-2.png"
+                    alt="food image"
+                    class="w-36 hover:scale-110 ease-linear duration-200 md:w-40 lg:w-28"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Mixed Fruit Juice
+                    </h4>
+                    <p class="paragraph">
+                      Quench your thirst with our refreshing Mixed Fruit Juice.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Drink : 3 -->
+              <li class="item_wrap beverage">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/beverage-3.png"
+                    alt="food image"
+                    class="w-28 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-24"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Pomogranate Shake
+                    </h4>
+                    <p class="paragraph">
+                      Quench your thirst with our refreshing Pomogranate
+                      Milkshake.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Drink : 4 -->
+              <li class="item_wrap beverage">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/beverage-4.png"
+                    alt="food image"
+                    class="w-28 hover:scale-110 ease-linear duration-200 md:w-32 lg:w-20"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Orange Juice
+                    </h4>
+                    <p class="paragraph">
+                      Quench your thirst with our refreshing Orange Juice.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+
+              <!-- Drink : 5 -->
+              <li class="item_wrap beverage">
+                <div class="h-56 grid place-items-center bg-DelftBlue rounded-3xl hover:bg-Saffron ease-linear duration-200 lg:h-44 dark:bg-gray-800">
+                  <img
+                    src="img/beverage-5.png"
+                    alt="food image"
+                    class="w-36 hover:scale-110 ease-linear duration-200 md:w-40 lg:w-32 mb-8 md:mb-8 lg:mb-8"
+                  />
+                </div>
+
+                <div class="pt-2">
+                  <div class="mb-2 space-y-2">
+                    <h4 class="text-lg text-white font-extrabold">
+                      Watermellon Juice
+                    </h4>
+                    <p class="paragraph">
+                      Quench your thirst with our refreshing Watermellon Juice.
+                    </p>
+                  </div>
+
+                  <p class="text-Saffron">$5.00</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="review" class="bg-DelftBlue dark:bg-gray-800 py-20">
+        <div class="ml-16 mr-16 customer_review">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section_title">Customer Reviews</h2>
+
+            <div class="seperator mx-auto"></div>
+
+            <p class="paragraph">
+              Listen to what our Customer has to say about Sizzle Stack's
+              mouthwatering burgers, side Snacks and refreshing Beverages.
+            </p>
+          </div>
+
+          <div class="swiper py-10">
+            <ul class="swiper-wrapper">
+              <!-- Customer 1 :  -->
+              <li class="swiper-slide pt-5">
+                <div class="flex flex-col gap-5 bg-cyan-800 rounded-lg p-6 dark:bg-violet-500">
+                  <p class="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam alias iure maxime quam quas nam consectetur facere magnam perspiciatis illo! Ducimus ad doloremque nostrum sint, quas illo a similique saepe.
+                  </p>
+
+                  <div class="flex items-center mb-5">
+                    <img
+                      src="img/review-1.jpg"
+                      alt="review image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-poppins uppercase">Jhon Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+
+                    <i class="fa-solid fa-quote-right text-4xl text-Saffron ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Customer 2 :  -->
+              <li class="swiper-slide pt-5">
+                <div class="flex flex-col gap-5 bg-cyan-800 rounded-lg p-6 dark:bg-violet-500">
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia nesciunt voluptatem sit autem doloremque numquam atque ea tenetur cupiditate labore quis, temporibus omnis distinctio ipsam minus velit, dolorum assumenda.
+                  </p>
+
+                  <div class="flex items-center mb-5">
+                    <img
+                      src="img/review-2.jpg"
+                      alt="review image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-poppins uppercase">Kate Upton</p>
+                      <p class="paragraph">YouTuber</p>
+                    </div>
+
+                    <i class="fa-solid fa-quote-right text-4xl text-Saffron ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Customer 3 :  -->
+              <li class="swiper-slide pt-5">
+                <div class="flex flex-col gap-5 bg-cyan-800 rounded-lg p-6 dark:bg-violet-500">
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo magni fugit suscipit! Perferendis in amet unde aperiam molestias voluptate laboriosam magni. Recusandae laborum nihil saepe incidunt impedit facilis necessitatibus.
+                  </p>
+
+                  <div class="flex items-center mb-5">
+                    <img
+                      src="img/review-3.jpg"
+                      alt="review image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-poppins uppercase">Dav Garry</p>
+                      <p class="paragraph">Software Developer</p>
+                    </div>
+
+                    <i class="fa-solid fa-quote-right text-4xl text-Saffron ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Customer 4 :  -->
+              <li class="swiper-slide pt-5">
+                <div class="flex flex-col gap-5 bg-cyan-800 rounded-lg p-6 dark:bg-violet-500">
+                  <p class="paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, natus cupiditate dolorum amet delectus, error fugiat veniam voluptas eveniet mollitia possimus beatae ipsa nostrum, ab quis tempora ea at quidem.
+                  </p>
+
+                  <div class="flex items-center mb-5">
+                    <img
+                      src="img/review-4.jpg"
+                      alt="review image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-poppins uppercase">Jessica Mellony</p>
+                      <p class="paragraph">Singer</p>
+                    </div>
+
+                    <i class="fa-solid fa-quote-right text-4xl text-Saffron ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Customer 5 :  -->
+              <li class="swiper-slide pt-5">
+                <div class="flex flex-col gap-5 bg-cyan-800 rounded-lg p-6 dark:bg-violet-500">
+                  <p class="paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur officiis repellat, praesentium facilis quo ut eos facere excepturi. Blanditiis deleniti suscipit ab fugiat quam cupiditate voluptates quas voluptate nulla minima?
+                  </p>
+
+                  <div class="flex items-center mb-5">
+                    <img
+                      src="img/review-5.jpg"
+                      alt="review image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-poppins uppercase">Virat Sharma</p>
+                      <p class="paragraph">Athlete</p>
+                    </div>
+
+                    <i class="fa-solid fa-quote-right text-4xl text-Saffron ml-auto"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-Gold py-16">
+        <div class="ml-16 mr-16 flex flex-col gap-5 md:items-center md:flex-row">
+
+          <div class="space-y-4 md:flex-1">
+            <h2 class="text-2xl text-black font-bold">Get Exclusive Updates</h2>
+            <p class="text-sm text-black">To get regular updates, do subscribe our Newsletter.</p>
+          </div>
+
+          <div class="flex flex-col gap-3 md:flex-row md:items-center md:flex-1">
+            <input type="email" placeholder="Email address" class="p-2 text-black rounded-lg outline-none md:w-[60%]">
+            <a href="" class="text-center BTN bg-black hover:bg-Scarlet">
+              <i class="fa-solid fa-paper-plane"></i>
+              Subscribe
+            </a>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Bar :  -->
+    <footer class="footer">
+
+      <section id="footer">
+
+        <div class="ml-16 mr-16 border-b border-Saffron py-5 md:text-center"></div>
+
+        <div class="ml-16 mr-16 mt-8">
+
+          <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <div class="space-y-3">
+                <a href="" class="text-4xl font-poppins uppercase">
+                  Sizzle<span class="text-Saffron">Stack</span>
+                </a>
+
+                <p class="text-xs">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.Magnam placeat veniam nihil facilis eligendi distinctio, sitfugit quaerat voluptas adipisci.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="flex flex-col gap-3">
+                <h3 class="text-lg text-Saffron font-semibold  font-poppins uppercase">Support</h3>
+
+                <a href="" class="text-xs hover:text-Saffron">FAQ's</a>
+                <a href="" class="text-xs hover:text-Saffron">Privacy Policy</a>
+                <a href="" class="text-xs hover:text-Saffron">Terms & Condition</a>
+                <a href="" class="text-xs hover:text-Saffron">Contact</a>
+              </div>
+            </li>
+
+            <li class="space-y-8">
+
+              <!-- Phone Number :  -->
+              <div class="space-y-2">
+                <h3 class="text-lg text-Saffron font-semibold font-poppins uppercase">Phone</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-phone text-xl text-Saffron"></i>
+                  +91 6361670056
+                </p>
+              </div>
+
+              <!-- Email-id :  -->
+              <div class="space-y-2">
+                <h3 class="text-lg text-Saffron font-semibold font-poppins uppercase">Email</h3>
+
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-envelope text-xl text-Saffron"></i>
+                  amithrao0606@gmail.com
+                </p>
+              </div>
+            
+            </li>
+
+            <li class="space-y-8">
+
+              <!-- Address :  -->
+              <div class="space-y-2">
+                <h3 class="text-lg text-Saffron font-semibold font-poppins uppercase">Address</h3>
+                
+                <p class="flex items-center gap-2 text-xs">
+                  <i class="fa-solid fa-location-dot text-xl text-Saffron"></i>
+                  123 Main Street, Suite 456 <br>
+                  New York, NY 10001
+                </p>
+              </div>
+
+              <!-- Social Media :  -->
+              <div class="space-y-2">
+                <h3 class="text-lg text-Saffron font-semibold font-poppins uppercase">Follow Us</h3>
+
+                <div class="flex gap-5">
+                  <i class="fa-brands fa-facebook-f text-xl bg-white rounded-full p-1 text-blue-600 hover:-translate-y-1"></i>
+
+                  <i class="fa-brands fa-twitter text-xl bg-white rounded-full p-1 text-sky-500 hover:-translate-y-1"></i>
+
+                  <i class="fa-brands fa-square-instagram text-xl bg-white rounded-full p-1 text-pink-500 hover:-translate-y-1"></i>
+                </div>
+              </div>
+
+            </li>
+          </ul>
+
+          <div class="border-t border-Saffron py-5 md:text-center">
+            <p class="paragraph">All rights reserved</p>
+            <p class="paragraph">Copyright &copy; 2024</p>
+          </div>
+
+        </div>
+      </section>
+
+    </footer>
+
+    <a href="#" class="fixed right-4 -bott0m-1/2 bg-Gold shadow-sm inline-block px-4 py-2 rounded-full text-lg text-black z-50 hover:-translate-y-1 ease-in duration-200" id="scroll-up">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Swiper Js : -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction : false
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+
+        grabCursor:true,
+
+        breakpoints: {
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+        },
+       // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+        },
+    // when window width is >= 1024px
+      1024: {
+        slidesPerView: 3,
+      }
+  }
+      });
+    </script>
+
+    <!-- Scroll Reveal: -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JavaScript :  -->
+    <script src="main.js"></script>
+  </body>
+</html>
